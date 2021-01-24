@@ -35,10 +35,13 @@
           <div class="container-fluid">
             <div class="row h-100">
               <nav id="sidebarMenu" class="d-md-block sidebar collapse p-0">
-                <div class="sidebar-sticky">
+               
+                <div class="h-100">
                   <div class="Hamburger-menu" onclick="Hamburgermenu()">
                     <a href="javascript:void(0);"><img src="assets/images/icons/Hamburger.svg" title="Toggle Menu" alt="Toggle Menu"/></a>
                   </div>
+                  <div class="nav-scroll-wrapper">
+                    <div class="full-height-scroll">
                   <ul class="nav flex-column">
                     <li class="nav-item">
                       <a class="nav-link active" href="#">
@@ -46,23 +49,44 @@
                         <span class="lmenu-list">Dashboard </span>
                       </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item wk-nav-sub-menu">
                       <a class="nav-link" href="#">
                         <span class="lmenu-icon"><img src="assets/images/icons/My-Task.svg" title="My Task" alt="My Task"/></span>
                         <span class="lmenu-list">My Task</span>
+                        <span class="sub-arrow"><img src="assets/images/icons/arrow.svg"></span>
                       </a>
+                      <div class="wk-sub-menu">
+                        <ul>
+                          <li><a href="javascript:void(0);">Story Allocation</a></li>
+                          <li><a href="javascript:void(0);">Story Writing</a></li>
+                        </ul>
+                        </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item wk-nav-sub-menu">
                       <a class="nav-link" href="#">
                         <span class="lmenu-icon"><img src="assets/images/icons/All-Task.svg" title="All Tasks" alt="All Tasks"/></span>
                         <span class="lmenu-list">All Tasks</span>
+                        <span class="sub-arrow"><img src="assets/images/icons/arrow.svg"></span>
                       </a>
+                      <div class="wk-sub-menu">
+                        <ul>
+                          <li><a href="javascript:void(0);">Story Allocation</a></li>
+                          <li><a href="javascript:void(0);">Story Writing</a></li>
+                        </ul>
+                        </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item wk-nav-sub-menu">
                       <a class="nav-link" href="#">
                         <span class="lmenu-icon"><img src="assets/images/icons/Report.svg" title="Reports" alt="Reports"/></span>
                         <span class="lmenu-list">Reports</span>
+                        <span class="sub-arrow"><img src="assets/images/icons/arrow.svg"></span>
                       </a>
+                      <div class="wk-sub-menu">
+                        <ul>
+                          <li><a href="javascript:void(0);">Story Allocation</a></li>
+                          <li><a href="javascript:void(0);">Story Writing</a></li>
+                        </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">
@@ -83,9 +107,9 @@
                       </a>
                     </li>
                   </ul>
-          
-                 
-                 
+               
+                </div>
+                </div> 
                 </div>
               </nav>
           
@@ -95,11 +119,15 @@
               
                
               </main>
+              <footer>
+                <p>Developed by Newgen KnowledgeWorks</p>
+              </footer>
             </div>
             </div>
           </div>
-    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
     <script src="assets/js/wk-custom.js"></script>
   </body>
 </html>
