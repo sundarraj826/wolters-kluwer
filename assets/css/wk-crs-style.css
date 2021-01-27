@@ -85,7 +85,7 @@ padding: 0 30px !important;
 #sidebarMenu .nav-link:hover {
    background-color: #F7F7F7;
 }
-#sidebarMenu .nav-link.active {
+#sidebarMenu .nav-item.active .nav-link {
     background: #EBF1FD;
     color:var(--primary-color);
     border-left:3px solid var(--secondary-color);
@@ -139,7 +139,7 @@ padding: 0 30px !important;
     -moz-transition: .2s all ease;
     -ms-transition: .2s all ease;
 }
-#sidebarMenu .wk-nav-sub-menu.arrow-rotate .nav-link .sub-arrow{
+#sidebarMenu .wk-nav-sub-menu.active .nav-link .sub-arrow{
     transform: translate(0, -50%) rotate(0deg);
     -webkit-transform: translate(0, -50%) rotate(0deg);
     -ms-transform: translate(0, -50%) rotate(0deg);
@@ -148,6 +148,9 @@ padding: 0 30px !important;
 }
 .wk-sub-menu{
     display: none;
+}
+#sidebarMenu .wk-nav-sub-menu.active .wk-sub-menu{
+    display: block;
 }
 .wk-right-side{
     width: calc(100% - 220px);

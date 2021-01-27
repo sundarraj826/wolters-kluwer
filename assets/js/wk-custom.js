@@ -11,19 +11,29 @@ $('.full-height-scroll').slimScroll({
 
 
 //Nav left menu dropdown script
-    $('.wk-nav-sub-menu').on('click', function(){
-        var reportDropdown = $(this).children('.wk-sub-menu');
-        var subClassAdd = $(this);
-        
-        if(reportDropdown.is(':hidden')){
-            $('.wk-sub-menu').hide();
-            $('.wk-nav-sub-menu').removeClass('arrow-rotate');
-          reportDropdown.show();
-          subClassAdd.addClass('arrow-rotate');
+    $('.wk-nav-sub-menu a.nav-link').on('click', function(){
+        var reportDropdown = $(this).closest('li');       
+        if(reportDropdown.is('.active')){ 
+            reportDropdown.removeClass('active'); 
         }else{
-            reportDropdown.hide();
-            subClassAdd.removeClass('arrow-rotate');
+            $('.wk-nav-sub-menu a.nav-link').closest('li').removeClass('active');
+            reportDropdown.addClass('active'); 
         }
      
     });
+
+//Menu Highlight after page load
+    $(function () {
+    var url = window.location.href;
+
+$('.menu-highlight').each(function(){
+    if(url === (this.href)){
+        $('.nav li.nav-item').removeClass('active');
+        $(this).addClass('active');
+        $(this).closest('.nav-item').addClass('active');
+       
+    }
+   
+     });
+});
     
