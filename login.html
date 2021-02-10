@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="assets/css/wk-crs-style.css" rel="stylesheet">
+    <link href="assets/css/wk-responsive.css" rel="stylesheet">
+    <title>Wolters Kluwer</title>
+  </head>
+  <body>
+   <div class="wk-login-wrap">
+      <div class="wk-login-left">
+         <div class="inner-login-left">
+             <div class="wk-login-logo">Wolters Kluwer</div>
+             <div class="wk-login-lcontent">
+               wk wms - crs / lea
+             </div>
+         </div>
+      </div>
+      <div class="wk-login-right">
+         <div class="wk-login-form">
+              <form onsubmit="return btnsubmit()">
+                 <legend>Sign In</legend>
+                 <div class="form-group">
+                   <label for="loginemail">Email</label>
+                   <input type="text" id="loginemail" class="form-control"/>
+                   <span class="text-danger" id="emailInputError"></span>
+                 </div>
+                 <div class="form-group">
+                  <label for="loginpw">password</label>
+                  <input type="password" id="loginpw" class="form-control"/>
+                  <span class="text-danger" id="pwInputError"></span>
+                  <a href="javascript:void(0);">Forgot password?</a>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ" style="transform:scale(0.82);-webkit-transform:scale(0.82);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+                <button class="btn btn-default" type="submit">Sign In</button>
+              </form>
+         </div>
+      </div>
+   </div>
+       
+         
+          <footer>
+            <p>Developed by Newgen KnowledgeWorks</p>
+          </footer>
+          <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="assets/js/wk-custom.js"></script>
+  </body>
+</html>

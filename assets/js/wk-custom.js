@@ -36,4 +36,23 @@ $('.menu-highlight').each(function(){
    
      });
 });
-    
+
+//form validation script
+
+function btnsubmit(){
+    let emailInput = document.getElementById('loginemail').value;
+    let pwInput = document.getElementById('loginpw').value;
+
+    if(emailInput == ''){
+       document.getElementById('emailInputError').innerHTML = 'Please Fill the Email';
+       return false;
+    }
+    if(emailInput.indexOf('@') <= 0){
+        document.getElementById('emailInputError').innerHTML = 'invalid email address';
+        return false;
+    }
+    if(pwInput == ''){
+        document.getElementById('pwInputError').innerHTML = 'Please Fill the Password';
+        return false;
+    }
+}
